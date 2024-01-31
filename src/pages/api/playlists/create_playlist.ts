@@ -52,7 +52,7 @@ export default async function handler(req: APIRequest, res: NextApiResponse) {
 
 		const playlist_id = (await supabase.from('playlists').insert({
 			name: req.body.name,
-			author_id: client_id,
+			author_id: client_id ?? nullUUID,
 			color: req.body.color ?? 'red',
 			image_url: '',
 			genre_data: {}
