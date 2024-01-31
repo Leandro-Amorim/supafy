@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	overflow: hidden;
+
+	--contexify-menu-minWidth: 180px;
+	--contexify-menu-padding: 4px;
+	--contexify-menu-radius: 4px;
+	--contexify-menu-bgColor: #282828;
+	--contexify-menu-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1),
+	2px 4px 4px rgba(0, 0, 0, 0.1),
+	3px 6px 6px rgba(0, 0, 0, 0.1);
+	--contexify-menu-negatePadding: var(--contexify-menu-padding);
+
+	--contexify-separator-color: #3e3e3e;
+	--contexify-separator-margin: 0px;
+
+	--contexify-itemContent-padding: 10px;
+	--contexify-activeItem-radius: 2px;
+
+	--contexify-item-color: hsla(0,0%,100%,.9);
+	--contexify-activeItem-color: #fff;
+
+	--contexify-activeItem-bgColor: hsla(0,0%,100%,.1);
+	--contexify-rightSlot-color: #6f6e77;
+	--contexify-activeRightSlot-color: #fff;
+
+	--contexify-arrow-color: hsla(0,0%,100%,.9);
+	--contexify-activeArrow-color: #fff;
+}
+
+
+.icon-spin {
+	-webkit-animation: icon-spin 1s infinite linear;
+			animation: icon-spin 1s infinite linear;
+  }
+  
+  @-webkit-keyframes icon-spin {
+	0% {
+	  -webkit-transform: rotate(0deg);
+			  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(359deg);
+			  transform: rotate(359deg);
+	}
+  }
+  
+  @keyframes icon-spin {
+	0% {
+	  -webkit-transform: rotate(0deg);
+			  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(359deg);
+			  transform: rotate(359deg);
+	}
+  }
