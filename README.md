@@ -43,7 +43,6 @@ Make sure you have a working project in Supabase, with 2 buckets already made: `
 
 ### Step by step
 
-* Run all migrations from ``setup/migrations`` folder using the Supabase CLI or web interface
 * From your command line:
 
 ```bash
@@ -56,6 +55,8 @@ $ cd supafy
 # Install dependencies
 $ npm install
 ```
+
+* Run all migrations from ``setup/migrations`` folder using the Supabase CLI or web interface
 
 * Make sure you have a ``.env`` file in the root folder of the project with the variables ``NEXT_PUBLIC_SUPABASE_URL`` and ``NEXT_PUBLIC_SUPABASE_ANON_KEY`` properly configured according to the Supabase Dashboard.
 
