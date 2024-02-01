@@ -1,38 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<h1 align="center">
+  <br>
+  <a href="http://supafy.vercel.app"><img src="https://raw.githubusercontent.com/Leandro-Amorim/supafy/main/setup/img/logo.png" alt="Supafy" width="200"></a>
+  <br>
+  Supafy
+  <br>
+</h1>
 
-First, run the development server:
+<h4 align="center">A full-stack Spotify clone made with <a href="https://nextjs.org/" target="_blank">Next.js</a> and <a href="https://supabase.com/" target="_blank">Supabase</a>. You can see a working example at <a href="https://supafy.vercel.app/" target="_blank">supafy.vercel.app</a>.</h4>
+
+> **Note**
+> This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Spotify or Supabase.
+
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#setup">Setup</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#donate">Donate</a> •
+  <a href="#license">License</a>
+</p>
+
+![screenshot](https://raw.githubusercontent.com/Leandro-Amorim/supafy/main/setup/img/cover.png)
+![screenshot](https://raw.githubusercontent.com/Leandro-Amorim/supafy/main/setup/img/cover2.png)
+
+## Key Features
+
+* User authentication
+* RLS Policies
+* Search songs by name, artist or album
+* Add your favorite playlists to your library or add musics to your Liked Songs
+* Create playlists and add songs
+* Edit playlists and upload custom covers
+* History of playlists played
+* Keep listening to your musics without breaks while browsing the site
+* Persistent song queue
+
+## Setup
+
+### Prerequisites
+
+Make sure you have a working project in Supabase, with 2 buckets already made: ``images`` and ``musics``, both public. You'll also need a working installation of [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/).
+
+### Step by step
+
+* Run all migrations from ``setup/migrations`` folder using the Supabase CLI or web interface
+* From your command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# Clone this repository
+$ git clone https://github.com/Leandro-Amorim/supafy
+
+# Go into the repository
+$ cd supafy
+
+# Install dependencies
+$ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Make sure you have a ``.env`` file in the root folder of the project with the variables ``NEXT_PUBLIC_SUPABASE_URL`` and ``NEXT_PUBLIC_SUPABASE_ANON_KEY`` properly configured according to the Supabase Dashboard.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+* You can then run the project in developer mode using:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+# Run the app
+$ npm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Credits
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This software uses the following open source software:
 
-## Learn More
+- [Chakra](https://chakra-ui.com/)
+- [Supabase](https://supabase.com)
+- [Next.js](https://nextjs.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Fast Average Color](https://github.com/fast-average-color/fast-average-color)
+- [Node.js](https://nodejs.org/)
 
-To learn more about Next.js, take a look at the following resources:
+## Donate
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you think this project has helped you in any way or you've learned something new, consider buying me a coffee, I love it!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<a href="https://www.buymeacoffee.com/leandro.n.amorim" target="_blank"><img src="https://raw.githubusercontent.com/Leandro-Amorim/supafy/main/setup/img/coffee.png" alt="Buy Me A Coffee"></a>
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Distributed under the MIT License. See ``LICENSE.txt`` for more information.
